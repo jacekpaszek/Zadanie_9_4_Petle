@@ -1,11 +1,11 @@
 function drawTree (k) {
-  for (i = 0; i <= k; i++) {
-  	var star = '';
-  	for (j = 0; j < i; j++) {
-  		star += '*';
+  for (var i = 0; i < k; i++) {
+    var line = '*';
+    for (var j = 0; j < i; j++) {
+      line += '*';
   	};
-  	console.log(star);
+  	console.log(line);
   }
 }
 
-drawTree (6);
+drawTree(3);
